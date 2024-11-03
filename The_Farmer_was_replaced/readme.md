@@ -24,10 +24,10 @@ The code runs an infinite number of times and harvest the grass with the if cond
 
 **Demo:**
 Image Demo:
-![](./Photos/1_tile.png)
+![](./Photos/1_Tile.png)
 
 
-## Step 2: Farming on 8x8 tile
+## Step 2: Farming on 3x3 tile
 **Code:**
 ```python
 # Code to go around and farm grass
@@ -35,8 +35,8 @@ while True:
     if can_harvest():
         for i in range(get_world_size()):
             for j in range(get_world_size()):
-                harvest()
                 move(North)
+                harvest()
             move(East)
 ```
 
@@ -45,7 +45,7 @@ The code makes the drone go one square at a time harvests the grass with the if 
 
 **Demo:**
 Image Demo:
-![](./Photos/Hay.png)
+![](./Photos/3x3_Tile.png)
 
 ## Step 3: Farming Bush on 8x8 tile
 **Code:**
